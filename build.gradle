@@ -1,0 +1,35 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.7.RELEASE'
+	id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.incrowd'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+//	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo'
+
+	// https://mvnrepository.com/artifact/org.asynchttpclient/async-http-client
+	compile group: 'org.asynchttpclient', name: 'async-http-client', version: '2.10.1'
+	// https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
+// https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+	compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.3.4'
+// https://mvnrepository.com/artifact/org.springframework.integration/spring-integration-feed
+	compile group: 'org.springframework.integration', name: 'spring-integration-feed', version: '5.1.7.RELEASE'
+// https://mvnrepository.com/artifact/com.rometools/rome
+	compile group: 'com.rometools', name: 'rome', version: '1.12.1'
+
+
+}
