@@ -1,0 +1,29 @@
+<NewsArticleInformation>
+  <ClubName>string</ClubName>
+  <ClubWebsiteURL>string</ClubWebsiteURL>
+  <NewsArticle>
+    <ArticleURL>string</ArticleURL>
+    <NewsArticleID>3</NewsArticleID>
+    <PublishDate>string</PublishDate>
+    <Taxonomies>string</Taxonomies>
+    <TeaserText>string</TeaserText>
+    <Subtitle>string</Subtitle>
+    <ThumbnailImageURL>string</ThumbnailImageURL>
+    <Title>string</Title>
+    <BodyText>
+      <!--Zero or more repetitions:-->
+      <p>
+        e
+        <!--Zero or more repetitions:-->
+        <a href="string">string</a>
+        gero
+      </p>
+      <h6>
+        <em>string</em>
+      </h6>
+    </BodyText>
+    <GalleryImageURLs>string</GalleryImageURLs>
+    <VideoURL>string</VideoURL>
+    <OptaMatchId>string</OptaMatchId>
+  </NewsArticle>
+</NewsArticleInformation>
